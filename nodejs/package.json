@@ -1,0 +1,14 @@
+{
+  "name": "my_nodejs",
+  "version": "1.0.0",
+  "description": "my_nodejs",
+  "main": "myNodeJs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vwsharon",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
