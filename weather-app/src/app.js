@@ -1,6 +1,5 @@
 const express = require('express')
 const hbs = require('hbs')
-const postman_req = require('postman-request')
 const path = require('path')
 
 const app = express()
@@ -24,6 +23,13 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('*', (req, res) => {
+    res.render('notFound', {
+        title: 'Not-Found',
+        name:'vwsharon',
+        errorMessage:'404 Page Not Found !'
+    })
+})
 
 app.listen(port, () => {
     console.log('Server is up at http://localhost:' + port + '/')

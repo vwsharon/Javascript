@@ -8,8 +8,8 @@ formLocation.onsubmit = (event) => {
     event.preventDefault()
     const location = document.getElementById('location').value
 
-    if (location) {
-        console.log('Location - ', location)
+    if (location && location.trim().length !== 0) {
+        console.log('Location -', location.trim())
     } else {
         console.error('please enter location')
     }
